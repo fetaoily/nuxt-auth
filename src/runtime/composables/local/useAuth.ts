@@ -150,8 +150,8 @@ async function getSession(getSessionOptions?: GetSessionOptions): Promise<Sessio
     }
 
     // Clear all data: Request failed so we must not be authenticated
-    data.value = null
-    rawToken.value = null
+    // data.value = null
+    // rawToken.value = null
   }
   loading.value = false
   lastRefreshedAt.value = new Date()
